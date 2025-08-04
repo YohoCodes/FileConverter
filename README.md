@@ -90,7 +90,6 @@ heic_settings:
 # General settings
 general:
   clear_output: true   # Clear output directory before conversion
-  show_progress: true  # Show progress for each file
 ```
 
 ## Example Conversions
