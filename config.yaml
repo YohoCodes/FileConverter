@@ -36,6 +36,4 @@ heic_settings:
 # General settings
 general:
   # Clear output directory before conversion
-  clear_output: true
-  # Show progress for each file
-  show_progress: true 
+  clear_output: true 
