@@ -8,6 +8,12 @@
 *.jpeg
 *.JPEG
 
+# Keep folders but ignore their contents
+file_in/*
+!file_in/.gitkeep
+file_out/*
+!file_out/.gitkeep
+
 # Python
 __pycache__/
 *.py[cod]
