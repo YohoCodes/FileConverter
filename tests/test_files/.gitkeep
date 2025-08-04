@@ -1,0 +1,2 @@
+# This file ensures the test_files folder is tracked by git
+# Test images will be generated here when running tests 

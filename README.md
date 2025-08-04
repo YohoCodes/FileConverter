@@ -128,12 +128,42 @@ file_converter/
 - **For smaller JPG files**: Lower the `quality` setting (default: 95)
 - **For lossless HEIC**: Set `heic_settings.lossless: true`
 
+## Testing
+
+The project includes a comprehensive test suite that validates all conversion combinations:
+
+### Run All Tests
+```bash
+cd tests
+python run_tests.py
+```
+
+### Run Individual Tests
+```bash
+cd tests
+python test_heic_to_jpg.py    # Test HEIC → JPG conversion
+python test_heic_to_png.py    # Test HEIC → PNG conversion
+python test_png_to_jpg.py     # Test PNG → JPG conversion
+python test_png_to_heic.py    # Test PNG → HEIC conversion
+python test_jpg_to_png.py     # Test JPG → PNG conversion
+python test_jpg_to_heic.py    # Test JPG → HEIC conversion
+```
+
+### Test Coverage
+- ✅ **All 6 conversion combinations** tested
+- ✅ **Multiple image types** (RGB, transparent, colored)
+- ✅ **File validation** (size, dimensions, format compliance)
+- ✅ **Performance metrics** (conversion time tracking)
+
+See `tests/README.md` for detailed testing documentation.
+
 ## Troubleshooting
 
 - **No files found**: Make sure your input files are in the `file_in` folder and match the configured input format
 - **Conversion errors**: Check the `conversion.log` file for detailed error messages
 - **Missing dependencies**: Run `pip install -r requirements.txt` to install required packages
 - **Format not supported**: Ensure input/output formats are set to 'heic', 'png', or 'jpg' in config.yaml
+- **Test failures**: Run `cd tests && python run_tests.py` to validate all conversions
 
 ## Dependencies
 
