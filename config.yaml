@@ -1,0 +1,41 @@
+# Image Converter Configuration
+
+# Input format: 'heic', 'png', or 'jpg'
+input_format: 'heic'
+
+# Output format: 'heic', 'png', or 'jpg'
+output_format: 'jpg'
+
+# Image quality (1-100, only applies to JPG)
+quality: 95
+
+# Input and output directories
+input_dir: 'file_in'
+output_dir: 'file_out'
+
+# Supported input formats (extensions to look for)
+supported_formats:
+  heic: ['.heic', '.HEIC', '.heif', '.HEIF']
+  png: ['.png', '.PNG']
+  jpg: ['.jpg', '.JPG', '.jpeg', '.JPEG']
+
+# PNG settings
+png_settings:
+  # Background color for transparent images (RGB values 0-255)
+  background_color: [255, 255, 255]  # White background
+  # Optimize PNG files (set to false for faster conversion)
+  optimize: true
+
+# HEIC settings
+heic_settings:
+  # Quality for HEIC output (1-100)
+  quality: 95
+  # Lossless compression (true/false)
+  lossless: false
+
+# General settings
+general:
+  # Clear output directory before conversion
+  clear_output: true
+  # Show progress for each file
+  show_progress: true 

@@ -3,7 +3,7 @@
 # HEIF to JPG Converter Runner Script
 # This script activates the virtual environment and runs the converter
 
-echo "Starting HEIF to JPG converter..."
+echo "Starting Image Converter..."
 
 # Check if virtual environment exists
 if [ ! -d "venv" ]; then

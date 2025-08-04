@@ -7,6 +7,8 @@
 *.JPG
 *.jpeg
 *.JPEG
+*.png
+*.PNG
 
 # Keep folders but ignore their contents
 file_in/*
